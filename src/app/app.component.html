@@ -1,0 +1,30 @@
+<!-- topnavbar -->
+<div class="topnav shadow p-1">
+    <a>Academic Consultation <br><span class="subtitle">Appointment Queueing System</span></a>
+    <span class="menu" (click)="openNav(true)"><i class="bi bi-list"></i></span>
+</div>
+<!-- topnavbar -->
+
+<!-- left sidebar nav  -->
+
+<div  class="sidebar shadow p-2"  id="sidebar"  [ngStyle]="responsiveMenu">
+    <ul>
+        <li><a routerLink=""><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+        <li><a routerLink="/appointments"><i class="bi bi-card-text"></i> Appointments</a></li>
+        <li><a routerLink="/queueing"><i class="bi bi-person-gear"></i> Queueing</a></li>
+        <li><a routerLink="/history"><i class="bi bi-person-gear"></i> History</a></li>
+        <li><a routerLink="/profile"><i class="bi bi-person-gear"></i> Profile</a></li>
+        <li><a routerLink="/schedule"><i class="bi bi-person-gear"></i> Schedule</a></li>
+        <li><a href="#"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
+    </ul>
+</div>
+<!-- left sidebar nav  -->
+
+
+<!-- main content  -->
+
+<div class="main-content" [ngStyle]="responsiveContent">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- main content  -->

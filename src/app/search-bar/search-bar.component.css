@@ -1,0 +1,26 @@
+.search-bar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-end;
+    margin-left: auto;
+    width: 400px; /* Set the desired width */
+}
+
+.search-bar input[type="text"] {
+    flex: 1; /* Allow the input to grow and take up remaining space */
+    height: 40px; /* Set the desired height */
+    margin-right: 10px; /* Add some spacing between the input and button */
+    padding: 0 10px; /* Add padding inside the input */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+.search-bar button {
+    height: 40px; /* Set the desired height */
+    padding: 0 10px; /* Add padding inside the button */
+    background-color: #FFB76B; /* Set the background color */
+    color: #fff; /* Set the text color */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
